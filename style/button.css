@@ -1,0 +1,19 @@
+button{ 
+    display: block;
+    background: rgb(57, 62, 70);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 0px;
+    font-size: 18px;
+    transition: 0.3s;
+    width:90%;
+    transition: 0.3s;
+    font-family: Limelight-Regular;
+    margin-right: auto;
+    margin-left: auto;
+}
+button:hover{
+    scale: 1.05;
+}
