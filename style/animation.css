@@ -1,0 +1,45 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px)
+  }
+  100% {
+    opacity: 0.9;
+   transform: translateY(0);
+  }
+
+
+}
+
+@keyframes scale {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.navbar {
+    animation: fadeIn .3s ease-in-out;
+}
+
+.nav-links, #title {
+    animation: scale .7s ease-in-out;
+}
+
+#ball:hover {
+    box-shadow: -40px 100px 100px var(--marrom);
+    transition: 0.3s;
+     rotate: 10deg;
+ 
+ }
+
+ a:hover{
+    color: burlywood;
+    opacity: 0.8;
+    transition: 0.3s;  
+}
+ 
