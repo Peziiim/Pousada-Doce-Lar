@@ -142,3 +142,83 @@ a {
     font-family: serp;
 }
 
+/*Oséias --- Inicio*/
+
+#display {
+
+    margin: 0;
+    padding: 0;
+    background-color: #343233;
+    box-sizing: border-box;
+
+}
+
+.conteiner-carrosel{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
+.carrosel-img {
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    
+}
+
+.slide {
+    opacity: 0;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+    transition: opacity transform 0.5s ease-in-out;
+}
+
+.on {
+    opacity: 1;
+    position: absolute;
+}
+
+
+.slide {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+}
+
+.slide.on {
+    opacity: 1;
+    z-index: 1;
+}
+
+.carrosel-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 5px #ffffff4b ;
+}
+
+
+#btn-ante, #btn-prox {
+
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+#btn-ante img, #btn-prox img {
+    width: 100%;
+    height: 100%;
+}
+
+/*Oséias --- FIM*/
