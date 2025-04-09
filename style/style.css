@@ -74,7 +74,7 @@ a {
 
 #ball {
     position: absolute;
-    top: 47.5%;
+    top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 15rem;
