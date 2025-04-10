@@ -31,9 +31,11 @@
 }
 
 #ball:hover {
-    box-shadow: -40px 100px 100px var(--marrom);
+    box-shadow: -40px 50px 100px var(--marrom);
     transition: 0.3s;
-     rotate: 10deg;
+    rotate: 10deg;
+    transform: translateX(10px) translateY(-10px);
+
  
  }
 
