@@ -256,3 +256,104 @@ hr {
     }
 
 }
+
+/*Oséias --- Inicio*/
+
+#display {
+    margin: 0;
+    padding: 0;
+    background-color: #343233;
+    box-sizing: border-box;
+}
+
+.corpo {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+}
+
+.conteiner{
+    overflow-x: hidden;
+    overflow: hidden;
+    width: 900px;
+    border-radius: 15px;
+    scroll-behavior: smooth;
+}
+
+.carroselImg {
+    display: flex;
+    width: fit-content;
+}
+
+.carroselImg img{
+    width: 900px;
+    height: 350px;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+}
+
+.carroselImg img:hover {
+    transform: 0.5s ease-in-out;
+    transform: scale(1.2);
+}
+
+
+
+#display button {
+    font-size: 60px;
+    
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    top: 50%;  
+}
+
+
+#btn-ante{
+    left: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-left: 200px ;
+}
+
+#btn-prox{
+    right: 0;
+    position: absolute;
+    transform: translate(50%, -50%);
+    margin-right: 200px;
+}
+
+#display button:hover {
+    color: var(--amarelo);
+    transition: 0.3s ease-in-out;       
+}
+
+.pontosNav{
+    position: absolute; 
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex; 
+    gap: 10px;
+    z-index: 1;
+}
+
+
+.ponto {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.ponto.atual {
+    background-color: var(--marrom);
+}
+
+/*Oséias --- FIM*/
