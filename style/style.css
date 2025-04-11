@@ -145,80 +145,100 @@ a {
 /*Oséias --- Inicio*/
 
 #display {
-
     margin: 0;
     padding: 0;
     background-color: #343233;
     box-sizing: border-box;
-
 }
 
-.conteiner-carrosel{
+.corpo {
+    align-items: center;
+    justify-content: center;
     display: flex;
-    width: 100%;
     min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    
-}
-
-.carrosel-img {
     position: relative;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    width: 700px;
-    
 }
 
-.slide {
-    opacity: 0;
+.conteiner{
+    overflow-x: hidden;
     overflow: hidden;
-    width: 100%;
-    border-radius: 10px;
-    transition: opacity transform 0.5s ease-in-out;
+    width: 900px;
+    border-radius: 15px;
+    scroll-behavior: smooth;
 }
 
-.on {
-    opacity: 1;
-    position: absolute;
+.carroselImg {
+    display: flex;
+    width: fit-content;
+}
+
+.carroselImg img{
+    width: 900px;
+    height: 350px;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+}
+
+.carroselImg img:hover {
+    transform: 0.5s ease-in-out;
+    transform: scale(1.2);
 }
 
 
-.slide {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    width: 100%;
-    border-radius: 10px;
-    position: absolute;
+
+#display button {
+    font-size: 60px;
+    
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    top: 50%;  
+}
+
+
+#btn-ante{
     left: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-left: 200px ;
 }
 
-.slide.on {
-    opacity: 1;
+#btn-prox{
+    right: 0;
+    position: absolute;
+    transform: translate(50%, -50%);
+    margin-right: 200px;
+}
+
+#display button:hover {
+    color: var(--amarelo);
+    transition: 0.3s ease-in-out;       
+}
+
+.pontosNav{
+    position: absolute; 
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex; 
+    gap: 10px;
     z-index: 1;
 }
 
-.carrosel-img img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px 5px #ffffff4b ;
+
+.ponto {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
 }
 
-
-#btn-ante, #btn-prox {
-
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-
-}
-
-#btn-ante img, #btn-prox img {
-    width: 100%;
-    height: 100%;
+.ponto.atual {
+    background-color: var(--marrom);
 }
 
 /*Oséias --- FIM*/

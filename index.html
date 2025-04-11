@@ -7,6 +7,9 @@
     <link rel="icon" href="./assets/icon.png">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/animation.css">
+    <!--Carrosel-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <!--IMPORTANTE-->
@@ -46,20 +49,28 @@ adwdee
 
     <!--Oseias-->
     <section id="display">
-        <div class="conteiner-carrosel">
 
-            <button id="btn-ante" ><img src="./assets/carrossel/img-setas/arrowE.png" alt="seta equerda"></button>
+        
+        <div class="corpo">
+            
+            <div class="conteiner">
 
-            <div class="carrosel-img">
-                <img src="./assets/carrossel/img-pousada/fachada.jpg" class="slide on" alt="Fachada">
-                <img src="./assets/carrossel/img-pousada/quarto.jpg" class="slide" alt="Quarto">
-                <img src="./assets/carrossel/img-pousada/comida.jpg" class="slide" alt="Café da manhã">
-                <img src="./assets/carrossel/img-pousada/piscina.jpg" class="slide" alt="Piscina">
+                <div class="carroselImg">
+                    <img src="./assets/carrossel/img-pousada/fachada.jpg"  alt="Fachada">
+                    <img src="./assets/carrossel/img-pousada/quarto.jpg"  alt="Quarto">
+                    <img src="./assets/carrossel/img-pousada/comida.jpg"  alt="Café da manhã">
+                    <img src="./assets/carrossel/img-pousada/piscina.jpg"  alt="Piscina">
+                </div>
+
             </div>
-
-            <button id="btn-prox" ><img src="./assets/carrossel/img-setas/arrowD.png" alt="seta direita"></button>
-
+            <button id="btn-ante" >‹</button>
+            <button id="btn-prox" >›</button>
+            <div class="pontosNav">
+                <span class="ponto"></span>
+            </div>
         </div>
+        
+
         <script src="./script/carrosel.js"></script>
     </section>
 

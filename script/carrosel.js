@@ -1,26 +1,70 @@
-const slides = document.querySelectorAll(".slide"); 
-const btnProx = document.getElementById("btn-prox"); 
-const btnAnte = document.getElementById("btn-ante");
+const btnprox = document.getElementById('btn-prox');
+const btnante = document.getElementById('btn-ante');
+const slider = document.querySelector('.carroselImg');
+const conteiner = document.querySelector('.conteiner');
 
-let indexAtual = 0;
+const carroselWidth = parseInt(window.getComputedStyle(conteiner).width);
+const carroselImgWidth = parseInt(window.getComputedStyle(slider).width);
 
-function mostrarSlide(index) {
-  slides.forEach(slide => slide.classList.remove("on")); 
-  slides[index].classList.add("on");
+let slideAtual = 0;
+
+const slideProps = {
+  width: carroselWidth,
+  scroll: 0,
+};
+
+function setPontoA() {
+  const pontos = document.querySelectorAll('.ponto');
+  pontos.forEach((ponto) => ponto.classList.remove('atual'));
+  if (pontos[slideAtual]) {
+    pontos[slideAtual].classList.add('atual');
+  }
 }
 
-btnProx.addEventListener("click", () => {
-  indexAtual++; 
-  if (indexAtual >= slides.length) {
-      indexAtual = 0;
-  }
-  mostrarSlide(indexAtual);
-});
+function controlSlide({ target: { id } }) {
+  const totalSlides = slider.children.length;
 
-btnAnte.addEventListener("click", () => {
-  indexAtual--;
-  if (indexAtual < 0) {
-      indexAtual = slides.length - 1; 
+  switch (id) {
+    case 'btn-prox': {
+      slideAtual = (slideAtual + 1) % totalSlides;
+      setPontoA();
+      if (slideProps.scroll + slideProps.width < carroselImgWidth) {
+        slideProps.scroll += slideProps.width;
+      } else {
+        slideProps.scroll = 0;
+      }
+      conteiner.scrollLeft = slideProps.scroll;
+      break;
+    }
+    case 'btn-ante': {
+      slideAtual = (slideAtual - 1 + totalSlides) % totalSlides;
+      setPontoA();
+      if (slideProps.scroll - slideProps.width >= 0) {
+        slideProps.scroll -= slideProps.width;
+      } else {
+        slideProps.scroll = carroselImgWidth - slideProps.width;
+      }
+      conteiner.scrollLeft = slideProps.scroll;
+      break;
+    }
+    default:
+      break;
   }
-  mostrarSlide(indexAtual);
-});
+}
+
+btnprox.addEventListener('click', controlSlide);
+btnante.addEventListener('click', controlSlide);
+
+window.onload = () => {
+  const pontosNav = document.querySelector('.pontosNav');
+  const pontoModelo = document.querySelector('.ponto');
+
+  if (pontosNav && pontoModelo) {
+    const lengthcontent = slider.children.length;
+    for (let index = 1; index < lengthcontent; index++) {
+      const novoPonto = pontoModelo.cloneNode(); 
+      pontosNav.appendChild(novoPonto); 
+    }
+  }
+  setPontoA();
+};
