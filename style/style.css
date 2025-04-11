@@ -25,6 +25,9 @@ body {
     overflow-x: hidden;
 }
 
+/*Eduardo --- Começo*/
+
+
 
 #header {
     background-image: url('../assets/images/header.jpg');
@@ -161,6 +164,15 @@ hr {
     font-family: serp;
 }
 
+/* --------- */
+
+.container-full-rate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #rate {
     background-color: var(--background);
     display: flex;
@@ -175,7 +187,7 @@ hr {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 110px;
     font-size: 16px;
 }
 
@@ -196,18 +208,20 @@ hr {
 
 .rate-container {
     width: 100%;
-    padding-top: 20px;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     gap: 10px;
+    padding-top: 20px;
+    padding-right: 40px;
 }
 
 .number {
+    position: relative;
+    right: 3%;
     font-size: 6rem;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     color: white;
-    margin: 0 60px 0 23%;
 
 }
 
@@ -217,12 +231,14 @@ hr {
     margin-top: 15px;
     background-color: var(--amarelo);
     border-radius: 20px;
+
 }
 
 .shadow {
     width: 20rem;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 20px;
+
 }
 
 #four {
@@ -239,23 +255,8 @@ hr {
     font-size: 18px;
 }
 
+/*Eduardo --- FIM*/
 
-
-@media (max-width: 990px) {
-    .nav-links {
-        display: none;
-        margin: 0;
-    }
-
-    #title {
-        margin: 10px;
-    }
-
-    .mobile-menu{
-        display: flex;
-    }
-
-}
 
 /*Oséias --- Inicio*/
 
@@ -357,3 +358,97 @@ hr {
 }
 
 /*Oséias --- FIM*/
+
+/*Fim do desktop --- Inicio Mobile*/
+@media (max-width: 990px) {
+
+    /*Eduardo --- Começo*/
+    .nav-links {
+        display: none;
+        margin: 0;
+    }
+
+    #title {
+        margin: 10px;
+    }
+
+    .mobile-menu{
+        display: flex;
+        margin-left: 20px;
+    }
+
+    
+    .ball-container {
+        padding-top: 30%;
+    }
+
+
+    #ball {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    #line1 {
+        width: 15rem;
+    }
+
+    #line1 h1 {
+        font-size: 2.9rem;
+        
+    }
+
+    #line2 {
+        width: 22rem;
+
+    }
+
+    #line2 h1 {
+        font-size: 2.9rem;
+        bottom: 0;
+    }
+
+    
+    .comment-block {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .rate-container {
+        padding: 30px 0 30px 0;
+    }
+    .number {
+        right: 3%;
+        font-size: 2.5rem;
+    
+    }
+    
+    .rate-lines {
+        width: 6rem;
+        height: 10px;
+    
+    }
+    
+    .shadow {
+        width: 6rem;
+        height: 10px;
+    
+    }
+    
+    #four {
+        width: 3rem;
+    }
+    
+    #three {
+        width: 1rem;
+    }
+
+    
+.stars h4 {
+    margin-top: 7px;
+    color: white;
+    font-size: 15px;
+}
+/*Eduardo --- Fim*/
+
+}
