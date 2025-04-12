@@ -1,0 +1,64 @@
+#hero .about-us-section {
+    background-color: var(--background);
+    display: flex;
+    padding-block: 50px;
+}
+
+#hero .img-container {
+    margin-left: 40px;
+}
+
+#hero .img-container img{
+    width: 550px;
+    height: 700px;
+    object-fit: cover;
+}
+
+#hero .right-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero .text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 30px;
+    width: 800px;
+}
+
+#hero .text-container h1{
+    text-align: center;
+    color: var(--amarelo);
+    font-size: 6rem;
+    font-family: fineday, Arial, sans-serif;
+}
+
+#hero .text-container p{
+    line-height: 2.2rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+
+#hero .text-container button{
+    margin-top: 30px;
+    width: 250px;
+    padding: 20px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 3px solid var(--marrom);
+    color: var(--marrom);
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    transition: background-color 0.15s;
+}
+
+#hero .text-container button:hover{
+    color: #523c36;
+    background-color: #a0827b;
+}
