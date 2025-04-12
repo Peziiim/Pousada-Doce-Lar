@@ -1,27 +1,31 @@
-#hero .about-us-section {
+#hero {
+    box-sizing: border-box;
+}
+
+#about-us-section {
     background-color: var(--background);
     display: flex;
     padding-block: 50px;
 }
 
-#hero .img-container {
+#about-us-section .img-container {
     margin-left: 40px;
 }
 
-#hero .img-container img{
+#about-us-section .img-container img{
     width: 550px;
     height: 700px;
     object-fit: cover;
 }
 
-#hero .right-container {
+#about-us-section .right-container {
     display: flex;
     flex: 1;
     justify-content: center;
     align-items: center;
 }
 
-#hero .text-container{
+#about-us-section .text-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,14 +33,14 @@
     width: 800px;
 }
 
-#hero .text-container h1{
+#about-us-section .text-container h1{
     text-align: center;
     color: var(--amarelo);
     font-size: 6rem;
     font-family: fineday, Arial, sans-serif;
 }
 
-#hero .text-container p{
+#about-us-section .text-container p{
     line-height: 2.2rem;
     color: white;
     font-size: 1.5rem;
@@ -44,7 +48,7 @@
     font-family: "Open Sans", sans-serif;
 }
 
-#hero .text-container button{
+#about-us-section .text-container button{
     margin-top: 30px;
     width: 250px;
     padding: 20px 10px;
@@ -58,7 +62,53 @@
     transition: background-color 0.15s;
 }
 
-#hero .text-container button:hover{
+#about-us-section .text-container button:hover{
     color: #523c36;
     background-color: #a0827b;
+}
+
+#cards-section { 
+    padding-top: 200px; 
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+}
+
+#cards-section .card{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    height: 750px;
+    background-color: black;
+    color: black;
+    border-radius: 30px;
+    margin-inline: 20px;
+}
+
+#cards-section .text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cards-section .img-container img {
+    height: 280px;
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+#cards-section h2 {
+    font-size: 3rem;
+    color: var(--marrom);
+    margin-bottom: 30px;
+}
+
+#cards-section p {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
 }
