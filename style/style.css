@@ -451,3 +451,37 @@ hr {
 }
 /*Eduardo --- Fim*/
 }
+
+/* Lygio */
+#features {
+    background-color: #343233;
+    color: #ffedd8;
+}
+
+#imagemP {
+    text-align: center;
+    margin:auto;
+    object-fit: contain;
+}
+#imagemP img {
+    border-radius: 15px;
+    width: 900px;
+    height: 350px;
+    object-fit: cover;
+}
+#sobre {
+    gap: 48px;
+    margin: 25px;
+}
+
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    color: #ffedd8;
+    margin-right: 24px;
+}
+#container ul li {
+    display: flex;
+    align-items: center;
+}
