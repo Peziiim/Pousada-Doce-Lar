@@ -1,7 +1,7 @@
 :root {
-    --marrom: #543127;
+    --marrom: #683e22;
     --preto: #000000;
-    --amarelo: #FFB22C;
+    --amarelo: #f0dbaa;
     --background: #343233;
 }   
 
@@ -10,6 +10,10 @@
     padding: 0;
     cursor: default;
  }
+
+ html {
+    scroll-behavior: smooth;
+}
 
  @font-face {
     font-family: fineday;
@@ -21,6 +25,23 @@
     src: url(../assets/fonts/serp/serp-and-molot.ttf);
  }
 
+ 
+ @font-face {
+    font-family: handsome;
+    src: url(../assets/fonts/handsome-regular-maisfontes.4366/handsome-regular.ttf);
+ }
+
+ 
+ @font-face {
+    font-family: playwrite;
+    src: url(../assets/fonts/Playwrite_US_Modern/PlaywriteUSModern-VariableFont_wght.ttf);
+ }
+
+ @font-face {
+    font-family: noto;
+    src: url(../assets/fonts/Noto_Serif/NotoSerif-VariableFont_wdth\,wght.ttf);
+ }
+
 body {
     overflow-x: hidden;
 }
@@ -28,52 +49,87 @@ body {
 /*Eduardo --- Começo*/
 
 
-
-#header {
-    background-image: url('../assets/images/header.jpg');
-    background-size: cover;
-    height: 100vh;
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 10px;
+    position: absolute;
+    left: 10%;
+    top: 8%;
+    width: 80vw;
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: var(--amarelo);
+    border: 3px solid var(--marrom);
+    border-radius: 10px;
+    box-shadow: 0 0 10px grey;
 }
 
 .nav-links {
     display: flex;
-    gap: 40px;
+    gap: 20px;
     list-style-type: none;
     font-size: 1.2rem; 
-    margin-right: 70px;
+    margin-right: 50px;
     text-decoration: none;
-    color: white;
+    color: var(--marrom);
 }
+
+.nav-links img {
+    height: 15px;
+    margin: 0 10px 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--marrom);
+    font-size: 18px;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+}
+
 
 li {
     text-decoration: none;
-    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 12px;   
+}
+
+
+li button {
+    background-color: rgb(242, 242, 201);
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid var(--marrom);
 }
 
 #title {
-    color: white;
-    font-size: 1.5rem;
-    font-family: 'Times New Roman', Times, serif;
-    opacity: 1;
-    margin-left: 70px;
-
+    margin-left: 40px;
+    text-align: center;
+    color: var(--marrom);
 }
 
-a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-family: 'Times New Roman', Times, serif;
+#title h2 {
+    font-family: handsome;
+    font-weight: 400;
+    position: relative;
+    top: 7px;
 }
+
+#title h1 {
+    font-family: fineday;
+    font-weight: 400;
+    font-size: 2.5rem;
+    position: relative;
+    bottom: 5px;
+}
+
+
 
 .mobile-menu {
     width: 50px;
@@ -98,33 +154,63 @@ hr {
     opacity: 0.8;
 }
 
-.ball-container {
-    width: 100%;
-    padding-top: 8%;
+.header {
+    display: flex;
+}
+
+
+.text-container-header {
+    background-color: var(--amarelo);
+    width: 50vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
+
 }
 
-#ball {
+.text-container-header p {
+    width: 60%;
+    text-align: center;
     position: relative;
-    top: 20px;
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
-    background-color: var(--marrom);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    bottom: 5%;
+    font-family: noto;
+    color: var(--marrom);
+    font-size: 18px;
 }
 
-#ball img {
-    width: 80%;
-    height: 80%;
-    border-radius: 50%;
-    animation: scale .7s ease-in-out;
+.text-container-header h3 {
+    font-family: playwrite;
+    color: var(--marrom);
+    font-size: 25px;
+    font-weight: 250;
+    margin-top: 25%;
+}
 
+.text-container-header h2 {
+    font-family: handsome;
+    color: var(--marrom);
+    font-size: 80px;
+    font-weight: 200;
+}
+
+.text-container-header h1 {
+    font-family:  fineday;
+    color: var(--marrom);
+    font-size: 7.5rem;
+    font-weight: 200;
+    position: relative;
+    bottom: 5%;
+}
+
+
+.header-image {
+    width: 50vw;
+    background-image: url("../assets/images/header-image.jpg");
+    background-position-x: center;
 }
 
 .line {
@@ -193,7 +279,7 @@ hr {
 
 .comment-block {
     width: 60%;
-    border: 2px solid var(--amarelo);
+    border: 2px solid rgb(199, 110, 0);
     padding: 20px;
     display: flex;
     align-items: center;
@@ -212,15 +298,14 @@ hr {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding-top: 20px;
-    padding-right: 40px;
+    padding: 20px 50px 70px 50px;
 }
 
 .number {
     position: relative;
     right: 3%;
     font-size: 6rem;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     color: white;
 
 }
@@ -229,7 +314,7 @@ hr {
     width: 20rem;
     height: 20px;
     margin-top: 15px;
-    background-color: var(--amarelo);
+    background-color: rgb(248, 248, 52);
     border-radius: 20px;
 
 }
@@ -363,6 +448,7 @@ hr {
 @media (max-width: 1024px) {
 
     /*Eduardo --- Começo*/
+
     .nav-links {
         display: none;
         margin: 0;
