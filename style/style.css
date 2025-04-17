@@ -477,7 +477,7 @@ hr {
 
 #container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: #ffedd8;
     margin-right: 24px;
 }
@@ -485,3 +485,11 @@ hr {
     display: flex;
     align-items: center;
 }
+
+#container span, p {
+    font-size: 24px;
+}
+#container h2 {
+    font-size: 32px;
+}
+
