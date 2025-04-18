@@ -49,20 +49,26 @@ body {
 /*Eduardo --- Começo*/
 
 
+.nav-flex {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 7vh;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    position: absolute;
-    left: 10%;
-    top: 8%;
     width: 80vw;
     opacity: 1;
     background-color: var(--amarelo);
     border: 3px solid var(--marrom);
     border-radius: 10px;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 30px grey;
+    z-index: 2;
 }
 
 .nav-links {
@@ -106,6 +112,7 @@ li button {
     height: 50px;
     border-radius: 10px;
     border: 2px solid var(--marrom);
+    box-shadow: 0 0 30px grey[];
 }
 
 #title {
@@ -162,7 +169,7 @@ hr {
 .text-container-header {
     background-color: var(--amarelo);
     width: 50vw;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -175,8 +182,6 @@ hr {
 .text-container-header p {
     width: 60%;
     text-align: center;
-    position: relative;
-    bottom: 5%;
     font-family: noto;
     color: var(--marrom);
     font-size: 18px;
@@ -187,7 +192,7 @@ hr {
     color: var(--marrom);
     font-size: 25px;
     font-weight: 250;
-    margin-top: 25%;
+    margin-top: 15%;
 }
 
 .text-container-header h2 {
@@ -211,6 +216,7 @@ hr {
     width: 50vw;
     background-image: url("../assets/images/header-image.jpg");
     background-position-x: center;
+    background-repeat: no-repeat;
 }
 
 .line {
@@ -463,35 +469,46 @@ hr {
         margin-left: 20px;
     }
 
-    
-    .ball-container {
-        padding-top: 30%;
+    #header {
+        height: 200vh;
     }
 
-
-    #ball {
-        width: 12rem;
-        height: 12rem;
+    .header {
+        flex-direction: column;
     }
 
-    #line1 {
-        width: 15rem;
-    }
-
-    #line1 h1 {
-        font-size: 2.9rem;
+    .text-container-header {
+        width: 100vw;
+        height: 200vh;
         
     }
 
-    #line2 {
-        width: 22rem;
+    .header-image {
+        display: none;
+    }
+
+
+    .text-container-header h3 {
+        font-size: 8vw;
 
     }
 
-    #line2 h1 {
-        font-size: 2.9rem;
+    .text-container-header h2 {
+        font-size: 18vw;
+    }
+
+
+    .text-container-header h1 {
+        font-size: 23vw;
         bottom: 0;
     }
+
+
+    .text-container-header p {
+        font-size: 5vw;
+        width: 80%;
+    }
+
 
     
     .comment-block {
