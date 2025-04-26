@@ -1,0 +1,360 @@
+@media (max-width: 1024px) {
+    body {
+        font-size: 90%; 
+    }
+
+    /*Eduardo --- Começo*/
+
+    .nav-flex {
+        width: 100vw;
+        position: block;
+        top: 0;
+    }
+    
+    .navbar {
+        padding: 25px;
+        width: 100vw;
+        border-left: 0;
+        border-right: 0;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+  
+    #title {
+        margin-left: 20px;
+        text-align: center;
+        color: var(--marrom);
+    }
+    
+    #title h2 {
+        position: relative;
+        top: 7px;
+    }
+    
+    #title h1 {
+        font-size: 2rem;
+        position: relative;
+        bottom: 5px;
+    }
+    
+    .mobile-menu{
+        display: flex;
+        margin-right: 30px;
+    }
+
+    header {
+        overflow-y: hidden;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .text-container-header {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        top: 10%;
+    }
+
+    .header-image {
+        display: none;
+    }
+
+
+    .text-container-header h3 {
+        font-size: 1.4rem;
+
+    }
+
+    .text-container-header h2 {
+        font-size: 3.5rem;
+    }
+
+
+    .text-container-header h1 {
+        font-size: 4.5rem;
+        bottom: 20px;
+
+    }
+
+
+    .text-container-header p {
+        font-size: 5vw;
+        width: 80%;
+    }
+
+
+/* Hero */
+
+#about-us-section {
+    flex-direction: column;
+}
+
+#about-us-section .img-container {
+    margin: 0 auto ;
+
+}
+
+#about-us-section .img-container img{
+    width: 15rem;
+    height: 15rem;
+    border: 6px solid var(--marrom);
+    border-radius: 15px;
+}
+
+
+#about-us-section .text-container h1{
+    font-size: 5rem;
+    margin-top: 30px;
+}
+
+#about-us-section .text-container p{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#about-us-section .text-container button{
+    width: 150px;
+    font-size: 1.3rem;
+}
+
+
+#cards-section { 
+    flex-direction: column;
+}
+
+#cards-section .card{
+    width: 250px;
+    height: 650px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+#cards-section .img-container img {
+    height: 190px;
+    width: 210px;
+}
+
+#cards-section h2 {
+    font-size: 1.5rem;
+}
+
+#cards-section p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+/* hero fim */
+
+/* avaliações */
+     
+     .comment-block {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .comment-block p {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+
+    
+    .rate-container {
+        padding: 30px 0 30px 0;
+    }
+
+    .number {
+        right: 3%;
+        font-size: 2.5rem;
+    
+    }
+    
+    .rate-lines {
+        width: 6rem;
+        height: 10px;
+    
+    }
+    
+    .shadow {
+        width: 6rem;
+        height: 10px;
+    
+    }
+    
+    #four {
+        width: 3rem;
+    }
+    
+    #three {
+        width: 1rem;
+    }
+
+    
+.stars h4 {
+    margin-top: 7px;
+    color: white;
+    font-size: 15px;
+}
+/* avaliações  fim*/
+
+/*Oséias --- Inicio*/
+
+#about-us-section .text-container h1 {
+    font-size: 3rem;
+}
+
+#about-us-section .text-container p {
+    font-size: 1rem;
+}
+
+.corpo {
+    flex-direction: column;
+    padding: 20px;
+    height: 80vh;
+}
+
+.conteiner {
+    width: 100%;
+}
+
+.carroselImg img {
+    width: 450px;
+    height: 210px;
+}
+
+#btn-ante,
+#btn-prox {
+    margin: 0 30px;
+}
+
+.ponto {
+    width: 8px;
+    height: 8px;
+}
+
+.carroselImg {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.conteiner {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+/*Oséias --- FIM*/
+
+/* Lygio */
+
+
+#imagemP {
+    margin: 0;
+    object-fit: cover;
+}
+
+#imagemP img {
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+#sobre {
+    gap: 48px;
+    margin: 25px;
+    text-align: center;
+}
+
+#comod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 25px;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+}
+
+
+#container span, p {
+    text-align: center;
+}
+/* Lygio -- FIM */
+
+/*Otávio --- Inicio*/
+
+  .leftsection {
+    background-color: #543127;
+    color: white;
+    width: 100vw;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .leftsection h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    margin-left: 15vw;
+    align-self: flex-start;
+  }
+  
+  .leftsection h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+    margin-left: 15vw;
+    align-self: flex-start;
+  }
+  
+  .contactbuttons {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .contactbuttons:hover {
+    background-color: #ddd;
+  }
+  
+  .rightsection {
+    display: none;
+  }
+  
+
+  a{
+    text-decoration: none;
+    width: 70vw;
+  }
+  
+/*Otávio --- FIM*/
+}
+
+
+@media (min-width: 540px) {
+    header {
+        height: 150vh;
+    }
+
+  .text-container-header {
+    position: relative;
+    top: 25vh;
+  }
+    
+}

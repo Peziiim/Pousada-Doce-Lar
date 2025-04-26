@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/style/contact.css">
     <link rel="stylesheet" href="style/hero.css">
+    <link rel="stylesheet" href="/style/mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -23,40 +24,43 @@
     <!--Eduardo-->
     <section id="header">
         <header>
-           <div class="nav-flex">
-            <nav class="navbar">
-                <div id="title">
-                    <h2>Pousada</h2>
-                    <h1>Doce Lar</h1>
-                </div>
-                <ul class="nav-links">
-                    <li><button id="headerbtn"><a href="#header"><img src="./assets/images/home-icon.webp"
-                                    alt="home icon">Home</a></button></li>
-                    <li><button><a href="#features"><img src="./assets/images/calendar-icon.webp"
-                                    alt="calendar icon">Quartos</a></button></li>
-                    <li><button><a href="#contact"><img src="./assets/images/contact-icon.webp"
-                                    alt="contact icon">Contato</a></button></li>
+            <div class="nav-flex">
+                <nav class="navbar">
+                    <div id="title">
+                        <h2>Pousada</h2>
+                        <h1>Doce Lar</h1>
+                    </div>
+                    <ul class="nav-links">
+                        <li><button id="headerbtn"><a href="#header"><img src="./assets/images/home-icon.webp"
+                                        alt="home icon">Home</a></button></li>
+                        <li><button><a href="#features"><img src="./assets/images/calendar-icon.webp"
+                                        alt="calendar icon">Quartos</a></button></li>
+                        <li><button><a href="#contact"><img src="./assets/images/contact-icon.webp"
+                                        alt="contact icon">Contato</a></button></li>
 
-                </ul>
-                <div class="mobile-menu">
-                    <hr>
-                    <hr>
-                    <hr>
-                </div>
-            </nav>       
-        </div>
+                    </ul>
+                    <div class="mobile-menu">
+                        <hr>
+                        <hr>
+                        <hr>
+                    </div>
+                </nav>
+            </div>
             <div class="header">
                 <section class="text-container-header">
-                    <h3>Seja bem-vindo ao site da </h3>
-                    <h2>Pousada </h2>
-                    <h1>Doce Lar </h1>
+                    <div class="mol-container">
+                        <h3>Seja bem-vindo ao site da </h3>
+                        <h2>Pousada </h2>
+                        <h1>Doce Lar </h1>
+                    </div>
 
                     <p>Explore as inúmeras <strong>oportunidades</strong> que a região de <strong>Camanducaia</strong>
                         oferece. Em local privilegiado, a <strong>Pousada Doce Lar</strong> é o <strong>lugar
                             perfeito</strong> para descansar com a sua família ou amigos em um região extremamente
                         <strong>interessante</strong>. Após um dia de viagem, os quartos <strong>aconchegantes</strong>
                         e <strong>espaçosos</strong> da pousada te farão estar disposto para mais um dia de aventura no
-                        dia seguinte</p>
+                        dia seguinte
+                    </p>
                 </section>
 
                 <section class="header-image"></section>
@@ -173,33 +177,34 @@
             </div>
 
             <div id="comod">
-                <h2 style="margin-bottom: 16px; margin-top: 25px;">Comodidades populares</h2>
-            <ul id="infol">
-                <li>
-                    <img src="./assets/icons/iPiscina.svg" alt="" style="margin: 8px;" >
-                    <span style="color: #ffedd8;">
-                        Piscina
-                    </span>
-                </li>
-                <li>
-                    <img src="./assets/icons/iEstacionamento.svg" alt="" style="margin: 8px;">
-                    <span style="color: #ffedd8;">
-                        Estacionamento Livre
-                    </span>
-                </li>
-                <li>
-                    <img src="./assets/icons/iCafe.svg" alt="" style="margin: 8px;">
-                    <span style="color: #ffedd8;">
-                        Café da manhã
-                    </span>
-                </li>
-                <li>
-                    <img src="./assets/icons/iWifi.svg" alt="" style="margin: 8px;">
-                    <span style="color: #ffedd8;">
-                        Wi-fi
-                    </span>
-                </li>
-            </ul>
+                <h2 style="margin-bottom: 50px; margin-top: 25px;">Comodidades populares</h2>
+                <ul id="infol">
+                    <li>
+                        <img src="./assets/icons/iPiscina.svg" alt="" style="margin: 8px;">
+                        <span style="color: #ffedd8;">
+                            Piscina
+                        </span>
+                    </li>
+                    <li>
+                        <img src="./assets/icons/iEstacionamento.svg" alt="" style="margin: 8px;">
+                        <span style="color: #ffedd8;">
+                            Estacionamento Livre
+                        </span>
+                    </li>
+                    <li>
+                        <img src="./assets/icons/iCafe.svg" alt="" style="margin: 8px;">
+                        <span style="color: #ffedd8;">
+                            Café da manhã
+                        </span>
+                    </li>
+                    <li>
+                        <img src="./assets/icons/iWifi.svg" alt="" style="margin: 8px;">
+                        <span style="color: #ffedd8;">
+                            Wi-fi
+                        </span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -270,35 +275,36 @@
             <h1>CONTATOS</h1>
             <p>
                 <a href="https://bookings.hospedin.com/pousada-rancho-doce-lar" target="_blank">
-                    <button class="contactbuttons"><img
-                            src="https://img.icons8.com/ios-filled/30/000000/reservation-2.png" />
-                        Reserve Aqui!
-                    </button>
-                </a>
+                <button class="contactbuttons">
+                    <img src="https://img.icons8.com/ios-filled/30/000000/reservation-2.png" />
+                    Reserve Aqui!
+                </button>
+            </a>
             </p>
             <p>
-                <a href="https://www.facebook.com/docelarmoraes/" target="_blank">
-                    <button class="contactbuttons"><img
-                            src="https://img.icons8.com/ios-filled/30/000000/facebook-new.png" />
-                        Facebook
-                    </button>
+                <a href="https://www.facebook.com/docelarmoraes/" target="_blank"> 
+                <button class="contactbuttons">
+                    <img src="https://img.icons8.com/ios-filled/30/000000/facebook-new.png" />
+                    Facebook
+
+                </button>
                 </a>
             </p>
             <p>
                 <a href="https://www.instagram.com/docelarmoraes" target="_blank">
-                    <button class="contactbuttons"><img
-                            src="https://img.icons8.com/ios-filled/30/000000/instagram-new.png" />
+                    <button class="contactbuttons">
+                        <img src="https://img.icons8.com/ios-filled/30/000000/instagram-new.png" />
                         Instagram
                     </button>
                 </a>
             </p>
             <p>
-                <a href="https://wa.me/5535998145657" target="_blank">
-                    <button class="contactbuttons"> <img
-                            src="https://img.icons8.com/ios-filled/30/000000/whatsapp.png" />
-                        WhatsApp
-                    </button>
-                </a>
+            <a href="https://wa.me/5535998145657" target="_blank">
+                <button class="contactbuttons">
+                    <img src="https://img.icons8.com/ios-filled/30/000000/whatsapp.png" />
+                    WhatsApp
+                </button>
+            </a>
             </p>
         </div>
         <div class="rightsection">
