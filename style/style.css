@@ -467,13 +467,15 @@ hr {
 #imagemP {
     text-align: center;
     margin: 0 auto;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 25px;
 }
 
 #imagemP img {
     border-radius: 15px;
-    width: 65vw;
-    height: 350px;
+    width: 75vw;
+    height: 550px;
+    object-fit: cover;
 }
 
 #sobre {
@@ -487,6 +489,14 @@ hr {
     justify-content: space-evenly;
     color: #ffedd8;
     margin-right: 24px;
+    
+}
+
+#hor {
+    margin-top: 108px;
+}
+#hor p:nth-child(2) {
+    margin-top: 25px;
 }
 
 #container ul li {
@@ -500,4 +510,64 @@ hr {
 #container h2 {
     font-size: 32px;
 }
+
+/* Lygio localização */
+
+#local {
+    color: #ffedd8;
+    background-color: #343233;
+    
+}
+
+#at{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+#at img{
+    margin-top: 45px;
+    margin-left: 35px;
+}
+
+#at h2{
+    margin-top: 45px;
+}
+
+#map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 650px;
+    
+}
+
+
+.mapBox {
+    position: relative;
+    width: 75vw;
+    height: 550px;
+    background-color: #fff;
+    border: 2px solid rgb(199, 110, 0);
+}
+
+.mapBox iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#local a{
+    color: #ffedd8;
+    margin-left: 75px;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+#local a:hover {
+    color: var(--amarelo); 
+}
+ /* fim-Lygio */
+
 
