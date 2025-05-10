@@ -96,21 +96,20 @@ header {
     font-size: 1.2rem; 
     margin-right: 50px;
     text-decoration: none;
-    color: var(--marrom);
-  
+    color: var(--marrom);  
 }
 
 .nav-links img {
-    height: 15px;
+    height: 24px;
     margin: 0 10px 0 10px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: var(--marrom);
-    font-size: 18px;
-    font-weight: 900;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: archivo, sans-serif;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -125,14 +124,20 @@ li {
     font-size: 12px;   
 }
 
-
-li button {
-    background-color: rgb(242, 242, 201);
+li a {
+    background-color: var(--amarelo);
     width: 130px;
     height: 50px;
     border-radius: 10px;
     border: 2px solid var(--marrom);
-    box-shadow: 0 0 30px grey[];
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: border-color 0.15s, background-color 0.15s;
+}
+
+li a:hover {
+    border-color: rgb(80, 44, 0);
+    background-color: rgb(231, 201, 145);
 }
 
 #title {
@@ -173,7 +178,7 @@ li button {
 }
 
 
-.link-container {
+/* .link-container {
     background-color: var(--marrom);
     flex-direction: column;
     justify-content: center;
@@ -188,7 +193,7 @@ li button {
     z-index: 1;
     transition: 2s ease;
     display: none;
-}
+} */
 
 .link-container a{
     display: flex;

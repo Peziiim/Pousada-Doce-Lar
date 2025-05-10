@@ -17,7 +17,7 @@
 }
 
 #about-us-section .left-container {
-    margin-top: 4rem;
+    margin-top: -2.5rem;
     display: flex;
     flex: 1;
     justify-content: center;
@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 600px;
 }
 
@@ -45,7 +46,7 @@
     font-family: noto, sans-serif;
 }
 
-#about-us-section .text-container button{
+#about-us-section .text-container a{
     margin-top: 4rem;
     padding: 20px 80px;
     border-radius: 20px;
@@ -61,7 +62,7 @@
     box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
 }
 
-#about-us-section .text-container button:hover{
+#about-us-section .text-container a:hover{
     border-color: rgb(80, 44, 0);
     background-color: rgb(80, 44, 0);
     color: rgb(219, 197, 169);
