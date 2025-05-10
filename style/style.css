@@ -42,6 +42,16 @@
     src: url(../assets/fonts/Noto_Serif/NotoSerif-VariableFont_wdth\,wght.ttf);
  }
 
+ @font-face {
+    font-family: charis;
+    src: url(../assets/fonts/Charis_SIL/CharisSIL-BoldItalic.ttf);
+ }
+
+ @font-face {
+    font-family: archivo;
+    src: url(../assets/fonts/Archivo/Archivo-VariableFont_wdth\,wght.ttf);
+ }
+
 body {
     overflow-x: hidden;
 }
@@ -51,7 +61,7 @@ body {
 header {
     display: flex;
     background-color: var(--amarelo);
-    height: 110vh;
+    height: 100vh;
 }
 
 
@@ -113,7 +123,6 @@ li {
     justify-content: start;
     align-items: center;
     font-size: 12px;   
-  
 }
 
 
@@ -124,8 +133,6 @@ li button {
     border-radius: 10px;
     border: 2px solid var(--marrom);
     box-shadow: 0 0 30px grey[];
-   
-
 }
 
 #title {
@@ -214,14 +221,12 @@ hr {
 }
 
 .text-container-header {
-    width: 50vw;
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-
-
 }
 
 .text-container-header p {
@@ -248,7 +253,7 @@ hr {
 }
 
 .text-container-header h1 {
-    font-family:  fineday;
+    font-family: fineday;
     color: var(--marrom);
     font-size: 7.5rem;
     font-weight: 200;
@@ -262,6 +267,7 @@ hr {
     background-image: url("../assets/images/header-image.jpg");
     background-position-x: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* --------- */
