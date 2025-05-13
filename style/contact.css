@@ -1,31 +1,48 @@
 /*Otávio --- Inicio*/
 #contact {
     display: flex;
-    height: 80vh;
+    align-items: center;
     font-family: Cambria, serif;
+    background-image: url("../assets/images/coffe.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
-  
+
   .leftsection {
-    background-color: #543127;
-    color: white;
     width: 40%;
+    height: 70vh;
+    background-color: #f0dbaa;
+    color:#683e22;
     padding: 60px 40px;
     display: flex;
     flex-direction: column;
-    justify-content:flex-end;
+    justify-content:center;
     gap: 30px;
+    border: 2px solid #683e22;
+    border-radius: 4%; 
+    margin-left: 3%;
+    box-shadow: 2px 2px 20px #683e22;
+    margin-top: 5vh ;
+    margin-bottom: 5vh ;
   }
   
-  .leftsection h2 {
+  
+
+  .leftsection h2 { 
     font-size: 2.2vw;
     font-weight: 700;
     margin: 0;
+    font-family: fineday;
+    text-shadow: 2px 2px 10px #683e22;
   }
   
   .leftsection h1 {
     font-size: 4vw;
     font-weight: 900;
     margin: 0;
+    font-family: fineday;
+    text-shadow: 2px 2px 10px #683e22;
   }
   
   .contactbuttons {
@@ -34,30 +51,21 @@
     justify-content: start;
     width: 80%;
     gap: 15px;
-    background-color: #f4f4f4;
-    border: none;
+    background-color: #e0ca95;
+    border: 2px solid #683e22;
     padding: 15px 25px;
     border-radius: 8px;
     font-size: 1.2vw;
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s;
+    color: #683e22;
+    box-shadow: 2px 2px 20px #683e22 ;
   }
   
   .contactbuttons:hover {
-    background-color: #ddd;
-  }
-  
-  .rightsection {
-    width: 60%;
-    height: 80vh;
-  }
-  
-  .rightsection img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    background-color: #a79366;
+    scale: 102%;
   }
 
   a{
@@ -65,7 +73,7 @@
     align-items: center;
     justify-content: start;
     text-decoration: none;
-    color: #5B362E;
+    color: #683e22;
   }
   
 /*Otávio --- FIM*/
