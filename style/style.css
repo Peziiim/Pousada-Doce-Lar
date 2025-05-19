@@ -42,6 +42,16 @@
     src: url(../assets/fonts/Noto_Serif/NotoSerif-VariableFont_wdth\,wght.ttf);
  }
 
+ @font-face {
+    font-family: charis;
+    src: url(../assets/fonts/Charis_SIL/CharisSIL-BoldItalic.ttf);
+ }
+
+ @font-face {
+    font-family: archivo;
+    src: url(../assets/fonts/Archivo/Archivo-VariableFont_wdth\,wght.ttf);
+ }
+
 body {
     overflow-x: hidden;
 }
@@ -51,7 +61,7 @@ body {
 header {
     display: flex;
     background-color: var(--amarelo);
-    height: 110vh;
+    height: 100vh;
 }
 
 
@@ -86,21 +96,20 @@ header {
     font-size: 1.2rem; 
     margin-right: 50px;
     text-decoration: none;
-    color: var(--marrom);
-  
+    color: var(--marrom);  
 }
 
 .nav-links img {
-    height: 15px;
+    height: 24px;
     margin: 0 10px 0 10px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: var(--marrom);
-    font-size: 18px;
-    font-weight: 900;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: archivo, sans-serif;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -113,19 +122,22 @@ li {
     justify-content: start;
     align-items: center;
     font-size: 12px;   
-  
 }
 
-
-li button {
-    background-color: rgb(242, 242, 201);
+li a {
+    background-color: var(--amarelo);
     width: 130px;
     height: 50px;
     border-radius: 10px;
     border: 2px solid var(--marrom);
-    box-shadow: 0 0 30px grey[];
-   
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: border-color 0.15s, background-color 0.15s;
+}
 
+li a:hover {
+    border-color: rgb(80, 44, 0);
+    background-color: rgb(231, 201, 145);
 }
 
 #title {
@@ -166,7 +178,7 @@ li button {
 }
 
 
-.link-container {
+/* .link-container {
     background-color: var(--marrom);
     flex-direction: column;
     justify-content: center;
@@ -181,7 +193,7 @@ li button {
     z-index: 1;
     transition: 2s ease;
     display: none;
-}
+} */
 
 .link-container a{
     display: flex;
@@ -214,14 +226,12 @@ hr {
 }
 
 .text-container-header {
-    width: 50vw;
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-
-
 }
 
 .text-container-header p {
@@ -248,7 +258,7 @@ hr {
 }
 
 .text-container-header h1 {
-    font-family:  fineday;
+    font-family: fineday;
     color: var(--marrom);
     font-size: 7.5rem;
     font-weight: 200;
@@ -262,6 +272,7 @@ hr {
     background-image: url("../assets/images/header-image.jpg");
     background-position-x: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* --------- */
@@ -467,13 +478,15 @@ hr {
 #imagemP {
     text-align: center;
     margin: 0 auto;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 25px;
 }
 
 #imagemP img {
     border-radius: 15px;
-    width: 65vw;
-    height: 350px;
+    width: 75vw;
+    height: 550px;
+    object-fit: cover;
 }
 
 #sobre {
@@ -487,6 +500,14 @@ hr {
     justify-content: space-evenly;
     color: #ffedd8;
     margin-right: 24px;
+    
+}
+
+#hor {
+    margin-top: 108px;
+}
+#hor p:nth-child(2) {
+    margin-top: 25px;
 }
 
 #container ul li {
@@ -500,4 +521,64 @@ hr {
 #container h2 {
     font-size: 32px;
 }
+
+/* Lygio localização */
+
+#local {
+    color: #ffedd8;
+    background-color: #343233;
+    
+}
+
+#at{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+#at img{
+    margin-top: 45px;
+    margin-left: 35px;
+}
+
+#at h2{
+    margin-top: 45px;
+}
+
+#map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 650px;
+    
+}
+
+
+.mapBox {
+    position: relative;
+    width: 75vw;
+    height: 550px;
+    background-color: #fff;
+    border: 2px solid rgb(199, 110, 0);
+}
+
+.mapBox iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#local a{
+    color: #ffedd8;
+    margin-left: 75px;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+#local a:hover {
+    color: var(--amarelo); 
+}
+ /* fim-Lygio */
+
 

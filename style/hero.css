@@ -3,73 +3,87 @@
 }
 
 #about-us-section {
-    background-color: var(--background);
+    background-color: var(--amarelo);
     display: flex;
-    padding-block: 50px;
 }
 
 #about-us-section .img-container {
-    margin-left: 40px;
+    width: 50vw;
+    height: 100vh;
+    background-image: url("../assets/images/FotoExterna.png");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#about-us-section .img-container img{
-    width: 550px;
-    height: 700px;
-    object-fit: cover;
-}
-
-#about-us-section .right-container {
+#about-us-section .left-container {
+    margin-top: -2.5rem;
     display: flex;
     flex: 1;
     justify-content: center;
-    align-items: center;
 }
 
 #about-us-section .text-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-inline: 30px;
-    width: 800px;
+    justify-content: center;
+    width: 600px;
 }
 
 #about-us-section .text-container h1{
     text-align: center;
-    color: var(--amarelo);
-    font-size: 6rem;
-    font-family: fineday, Arial, sans-serif;
+    color: var(--marrom);
+    font-size: 4.5rem;
+    font-family: charis;
 }
 
 #about-us-section .text-container p{
-    line-height: 2.2rem;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 600;
-    font-family: "Open Sans", sans-serif;
+    margin-top: 3rem;
+    text-align: center;
+    color: var(--marrom);
+    font-size: 18px;
+    font-family: noto, sans-serif;
 }
 
-#about-us-section .text-container button{
-    margin-top: 30px;
-    width: 250px;
-    padding: 20px 10px;
+#about-us-section .text-container a{
+    margin-top: 4rem;
+    padding: 20px 80px;
     border-radius: 20px;
     cursor: pointer;
-    border: 3px solid var(--marrom);
+    border: 2px solid var(--marrom);
+    /* border: none; */
+    background-color: var(--amarelo);
     color: var(--marrom);
     font-size: 1.4rem;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-family: archivo, sans-serif;
     transition: background-color 0.15s;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
 }
 
-#about-us-section .text-container button:hover{
-    color: #523c36;
-    background-color: #a0827b;
+#about-us-section .text-container a:hover{
+    border-color: rgb(80, 44, 0);
+    background-color: rgb(80, 44, 0);
+    color: rgb(219, 197, 169);
 }
 
 #cards-section { 
-    padding-top: 200px; 
-    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 4rem; 
+    background-color: var(--amarelo);
+}
+
+#cards-section h1 {
+    font-family: charis;
+    font-size: 4rem;
+    color: var(--marrom);
+}
+
+#cards-section .cards {
+    margin-top: 3rem;
     display: flex;
     justify-content: center;
 }
@@ -79,12 +93,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 450px;
-    height: 750px;
-    background-color: black;
+    width: 415px;
+    height: 675px;
+    background: linear-gradient(180deg,rgba(255, 232, 189, 1) 0%, rgba(255, 223, 172, 1) 100%);
     color: black;
+    border: 4px solid var(--marrom);
     border-radius: 30px;
     margin-inline: 20px;
+    position: relative;
 }
 
 #cards-section .text-container{
@@ -94,21 +110,49 @@
 }
 
 #cards-section .img-container img {
-    height: 280px;
-    width: 400px;
+    height: 250px;
+    width: 350px;
     margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    border: 4px solid var(--marrom);
+}
+
+#cards-section button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid var(--marrom);
+    /* border: none; */
+    background-color: rgb(255, 225, 185);
+    color: var(--marrom);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: archivo, sans-serif;
+    transition: background-color 0.15s;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+#cards-section button:hover{
+    border-color: rgb(80, 44, 0);
+    background-color: rgb(80, 44, 0);
+    color: rgb(219, 197, 169);
 }
 
 #cards-section h2 {
-    font-size: 3rem;
+    font-family: archivo, sans-serif;
+    font-size: 1.8rem;
     color: var(--marrom);
     margin-bottom: 30px;
 }
 
 #cards-section p {
-    font-family: "Open Sans", sans-serif;
+    font-family: noto, sans-serif;
     text-align: center;
-    color: white;
-    font-size: 1.2rem;
-    line-height: 1.7rem;
+    color: var(--marrom);
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
