@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="./style/animation.css">
     <!--Carrosel-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./style/contact.css">
     <link rel="stylesheet" href="./style/hero.css">
     <link rel="stylesheet" href="./style/mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@1,448&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/contact.css">
 </head>
 
 <body>
@@ -284,43 +287,59 @@
 
     <!--Otavio-->
     <section id="contact">
-        
-          <div class="leftsection">
-        <h2>TALK TO US</h2>
-        <h1>CONTATOS</h1>
-        <p>
-            <a href="https://bookings.hospedin.com/pousada-rancho-doce-lar" target="_blank">
-            <button class="contactbuttons">
-                <img src="https://img.icons8.com/ios-filled/30/000000/reservation-2.png" />
-                Reserve Aqui!
-            </button>
-        </a>
-        </p>
-        <p>
-            <a href="https://www.facebook.com/docelarmoraes/" target="_blank"> 
-            <button class="contactbuttons">
-                <img src="https://img.icons8.com/ios-filled/30/000000/facebook-new.png" />
-                Facebook
-
-            </button>
-            </a>
-        </p>
-        <p>
-            <a href="https://www.instagram.com/docelarmoraes" target="_blank">
-                <button class="contactbuttons">
-                    <img src="https://img.icons8.com/ios-filled/30/000000/instagram-new.png" />
-                    Instagram
-                </button>
-            </a>
-        </p>
-        <p>
-        <a href="https://wa.me/5535998145657" target="_blank">
-            <button class="contactbuttons">
-                <img src="https://img.icons8.com/ios-filled/30/000000/whatsapp.png" />
-                WhatsApp
-            </button>
-        </a>
-        </p>
+        <div id="particles-js"></div>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script>
+            particlesJS.load('particles-js', 'script/particlesjs-config (2).json', function() {
+            console.log('particles.js config loaded');
+            });
+        </script>
+        <div class="center">
+            <div class="left">
+                <p class="contacttitulo">
+                    <h2 class="dancing">Talk To Us</h2>
+                    <h1 class="lora">CONTATOS</h1>
+                </p>
+                <div class="buttons">
+                <p>
+                    <a href="https://bookings.hospedin.com/pousada-rancho-doce-lar" target="_blank">
+                        <button class="contactbuttons" class="poetsen-one-regular">
+                            <img width="25" height="25" src="https://img.icons8.com/ios/25/calendar--v1.png" alt="calendar--v1"/>
+                            Reserve Aqui!
+                        </button>
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.facebook.com/docelarmoraes/" target="_blank"> 
+                        <button class="contactbuttons" class="poetsen-one-regular">
+                            <img width="25" height="25" src="https://img.icons8.com/ios/25/facebook-new.png" alt="facebook-new"/>
+                            Facebook
+                        </button>
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.instagram.com/docelarmoraes" target="_blank">
+                        <button class="contactbuttons" class="poetsen-one-regular">
+                            <img width="25" height="25" src="https://img.icons8.com/ios/25/instagram-new--v1.png" alt="instagram-new--v1"/>
+                            Instagram
+                        </button>
+                    </a>
+                </p>
+                <p>
+                    <a href="https://wa.me/5535998145657" target="_blank">
+                        <button class="contactbuttons" class="poetsen-one-regular">
+                            <img width="25" height="25" src="https://img.icons8.com/ios/25/whatsapp--v1.png" alt="whatsapp--v1"/>
+                            WhatsApp
+                        </button>
+                    </a>
+                </p>
+                </div>
+                    
+            </div>
+            
+            <div class="right">
+                <img id="colagem" src="./assets/images/colagem.png" alt="colagem">
+            </div>
         </div>
         
     </section>
