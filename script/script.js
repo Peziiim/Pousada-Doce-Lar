@@ -1,23 +1,13 @@
-var btnHome = document.querySelector("#headerbtn");
-var menu = document.querySelector(".mobile-menu")
-var nav = document.querySelector(".link-container")
+var ponteiro = document.getElementById("ponteiro");
+var card = document.querySelector(".header-card");
+var x = document.getElementById("close-card");
 
-btnHome.addEventListener("click", function (){
-    location.reload();
+ponteiro.addEventListener("click", () => {
+    ponteiro.classList.toggle('jump');
+    card.classList.toggle('pop-show')
 })
 
-menu.addEventListener("click", () => {
-    if(nav.classList.contains("on")){
-        nav.style.animation = "out 1s ease 1 forwards"
-
-        setTimeout(() => {
-            nav.classList.remove("on");
-               nav.style.animation = "none"
-        }, 1000)
-    } else {
-        nav.classList.add("on")
-        nav.style.animation = "fadeIn 1s ease 1 forwards";
-    }
-
-  
-})
+x.addEventListener("click", () => {
+        card.classList.remove('pop-show');
+        ponteiro.classList.add('jump');
+} )

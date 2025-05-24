@@ -39,13 +39,47 @@
  
  }
 
- #header button:hover{
-    color: burlywood;
-    opacity: 0.8;
-    transition: 0.3s;  
+
+@keyframes jump{
+   0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2) rotate(10deg);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
 }
 
 
+.jump {
+    transition: 2s;
+    animation: jump 2s infinite;
+}
+
+@keyframes pop-show {
+     0% {
+    transform: scale(0.1);
+  }
+
+  50% {
+    transform: scale(1) rotate(10deg) translateX(-60px);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pop-show {
+  display: flex;
+   animation: pop-show 2.5s;
+   z-index: 2;
+}
 
 @keyframes out {
     0% {
@@ -59,3 +93,4 @@
   
   
   }
+
