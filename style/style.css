@@ -81,12 +81,12 @@ body {
     align-items: center;
     list-style-type: none;
     background-color: transparent;
-    width: 93%;
+    width: 100%;
 }
 
 .itens-nav h3 {
     font-size: 2rem;
-    margin-left: 30px;
+    margin-left: 20%;
     color: black;
     opacity: 1;
 }
@@ -198,7 +198,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start;
-    background-color: rgb(227, 227, 227);
+    background-color: #f7c878;
     position: absolute;
     bottom: 47vh;
     right: 42vw;
@@ -216,8 +216,8 @@ body {
 
 #triangulo {
     border-left: 55px solid transparent;
-    border-right: 3px solid rgb(227, 227, 227);
-    border-top: 49px solid rgb(227, 227, 227);
+    border-right: 3px solid #f7c878;
+    border-top: 49px solid #f7c878;
     position: absolute;
     bottom: -4vh;
     right: 0;
@@ -231,7 +231,7 @@ body {
     font-size: 16px;
     border-radius: 25px;
     padding: 10px;
-    background-color: #ffc115;
+    background-color: #000000;
 }
 
 .header-card a {
@@ -243,6 +243,7 @@ body {
 .pousadaIcon {
     background-color: #683e22;
     width: 70px;
+    height: 70px;
     padding: 40px;
     position: relative;
     left: 28vw;
@@ -256,6 +257,7 @@ body {
     bottom: 58vh;
     background-color: #ffb31d;
     width: 60px;
+    height: 60px;
     padding: 35px;
 }
 
@@ -271,20 +273,20 @@ body {
 }
 
 .container-header-text p{
-    font-size: 1rem;
+    font-size: 19px;
     font-weight: 700;
     margin-bottom: 40px;
     font-family: Archivo;
 }
 
 .container-header-text h5{
-    font-size: 1.4rem;
+    font-size: 25px;
     color: #ffc115;
     font-family: Archivo;
 }
 
 .container-header-text h2{
-    font-size: 3rem;
+    font-size: 48px;
     font-family: Archivo;
     margin-bottom: 40px;
 }
