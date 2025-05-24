@@ -1,70 +1,67 @@
 /*Otávio --- Inicio*/
 #contact {
     display: flex;
+    justify-items: center;
     align-items: center;
-    font-family: Cambria, serif;
-    background-image: url("../assets/images/coffe.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    font-family: poetsen-one-regular;
+    background-color:white;
+    margin: 0;
+    parddin: 0;
+    box-sizing: border-box;
   }
 
-  .leftsection {
-    width: 40%;
+  .center {
+    width: 90%;
     height: 70vh;
-    background-color: #f0dbaa;
-    color:#683e22;
-    padding: 60px 40px;
+    background: #FFF6E7;
+    background: linear-gradient(130deg,rgba(255, 246, 231, 1) 100%, rgba(255, 255, 255, 1) 1%);
+    color: #f8bf58;
+    padding: 20px 40px;
     display: flex;
     flex-direction: column;
     justify-content:center;
     gap: 30px;
-    border: 2px solid #683e22;
-    border-radius: 4%; 
-    margin-left: 3%;
-    box-shadow: 2px 2px 20px #683e22;
+    border-radius: 20px; 
     margin-top: 5vh ;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 5vh ;
   }
   
   
 
-  .leftsection h2 { 
+  .center h2 { 
     font-size: 2.2vw;
-    font-weight: 700;
-    margin: 0;
-    font-family: fineday;
-    text-shadow: 2px 2px 10px #683e22;
+    margin: 0px;
+    text-shadow: 1px 1px 2pxrgb(248, 219, 88);
   }
   
-  .leftsection h1 {
+  .center h1 {
     font-size: 4vw;
-    font-weight: 900;
     margin: 0;
-    font-family: fineday;
-    text-shadow: 2px 2px 10px #683e22;
+    text-shadow: 1px 1px 5px  #f8bf58;
   }
   
   .contactbuttons {
     display: flex;
     align-items: center;
     justify-content: start;
-    width: 80%;
+    width: 40%;
     gap: 15px;
-    background-color: #e0ca95;
-    border: 2px solid #683e22;
+    background: #F8BF58;
+    background: linear-gradient(160deg, rgba(248, 191, 88, 1) 0%, rgba(255, 246, 231, 1) 64%, #fff6e7 100%);
     padding: 15px 25px;
     border-radius: 8px;
     font-size: 1.2vw;
     font-weight: 600;
     cursor: pointer;
+    border: none;
     transition: 0.3s;
-    color: #683e22;
-    box-shadow: 2px 2px 20px #683e22 ;
+    color: black;
+    Inherited: yes;
   }
   
   .contactbuttons:hover {
-    background-color: #a79366;
     scale: 102%;
   }
 
@@ -73,7 +70,22 @@
     align-items: center;
     justify-content: start;
     text-decoration: none;
-    color: #683e22;
   }
+
+  
+.poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+  .images{
+    height: 80%;
+    width: 40%;
+    background-color: white;
+  }
+  
   
 /*Otávio --- FIM*/
