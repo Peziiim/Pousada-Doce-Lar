@@ -4,65 +4,109 @@
     justify-items: center;
     align-items: center;
     font-family: poetsen-one-regular;
-    background-color:white;
+    background: url('https://apod.nasa.gov/apod/image/2405/M104HST.jpg') no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
     margin: 0;
-    parddin: 0;
+    padding: 0;
     box-sizing: border-box;
+    height: 100vh;
+  }
+
+  #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
   }
 
   .center {
-    width: 90%;
-    height: 70vh;
+    width: 90vw;
+    height: 90vh;
     background: #FFF6E7;
     background: linear-gradient(130deg,rgba(255, 246, 231, 1) 100%, rgba(255, 255, 255, 1) 1%);
-    color: #f8bf58;
-    padding: 20px 40px;
+    border-radius: 20px; 
+    margin-top: 5vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .left{
+    width: 40vw;
+    height: 80vh;
+    padding: 2.5vw;
     display: flex;
     flex-direction: column;
     justify-content:center;
-    gap: 30px;
-    border-radius: 20px; 
-    margin-top: 5vh ;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5vh ;
+    
   }
-  
-  
 
-  .center h2 { 
-    font-size: 2.2vw;
-    margin: 0px;
-    text-shadow: 1px 1px 2pxrgb(248, 219, 88);
+  .right{
+    width: 40vw;
+    height: 80vh;
+    padding: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #colagem{
+    width: auto;
+    height: 100%;
+    z-index: 2;
   }
   
   .center h1 {
     font-size: 4vw;
     margin: 0;
-    text-shadow: 1px 1px 5px  #f8bf58;
+    color: #f8bf58;
+    padding: 0;
+  }
+
+  .center h2 { 
+    font-size: 2.2vw;
+    margin: 0px;
+    color: #612f00;
+    padding: 0;
   }
   
+  .contacttitulo{
+    margin-bottom: 1vh;
+  }
+  
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1vh;
+  }
+
   .contactbuttons {
     display: flex;
     align-items: center;
     justify-content: start;
-    width: 40%;
-    gap: 15px;
-    background: #F8BF58;
-    background: linear-gradient(160deg, rgba(248, 191, 88, 1) 0%, rgba(255, 246, 231, 1) 64%, #fff6e7 100%);
+    width: 40vw;
     padding: 15px 25px;
+    background-color:#ffebc7;
     border-radius: 8px;
     font-size: 1.2vw;
     font-weight: 600;
+    font-style:normal;
     cursor: pointer;
     border: none;
     transition: 0.3s;
     color: black;
-    Inherited: yes;
+    z-index: 2;
   }
   
   .contactbuttons:hover {
     scale: 102%;
+    background: #ffffff;
+    background: linear-gradient(130deg,rgba(255, 255, 255, 1) 0%, rgba(255, 235, 199, 1) 44%);
   }
 
   a{
@@ -73,19 +117,19 @@
   }
 
   
-.poetsen-one-regular {
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+.dancing{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
-
-
-  .images{
-    height: 80%;
-    width: 40%;
-    background-color: white;
-  }
+.lora{
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
   
   
 /*Otávio --- FIM*/
