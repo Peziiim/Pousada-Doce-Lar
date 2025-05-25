@@ -86,7 +86,6 @@ body {
 
 .itens-nav h3 {
     font-size: 2rem;
-    margin-left: 20%;
     color: black;
     opacity: 1;
 }
@@ -94,8 +93,16 @@ body {
 .left {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 60px;
-    margin-left: 2.5vw;
+    width: 40%;
+}
+
+.right {
+    width: 20%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
 }
 
 .li-header {
@@ -119,7 +126,6 @@ body {
     font-size: 15px;
     font-weight: 700;
     padding: 10px 15px 10px 15px;
-    margin-right: 90px;
 }
 
 .left-block {
