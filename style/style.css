@@ -513,8 +513,8 @@ body {
 
 /* Lygio */
 #features {
-    background-color: #343233;
-    color: #ffedd8;
+    background-color: var(--amarelo);
+    
 }
 
 #imagemP {
@@ -540,7 +540,7 @@ body {
 #container {
     display: flex;
     justify-content: space-evenly;
-    color: #ffedd8;
+    color: var(--marrom);
     margin-right: 24px;
     
 }
@@ -564,12 +564,16 @@ body {
     font-size: 32px;
 }
 
+#comod li {
+    display: flex;
+    gap: 8px;
+}
 /* Lygio localização */
 
 #local {
-    color: #ffedd8;
-    background-color: #343233;
-    
+    font-family: fineday;
+    color: var(--marrom);
+    background-color: var(--amarelo);   
 }
 
 #at{
@@ -580,7 +584,7 @@ body {
 }
 
 #at img{
-    margin-top: 45px;
+    margin-top: 42px;
     margin-left: 35px;
 }
 
@@ -611,15 +615,15 @@ body {
 }
 
 #local a{
-    color: #ffedd8;
+    font-family: fineday;
+    color: var(--marrom);
     margin-left: 75px;
-    align-items: flex-end;
     justify-content: center;
-    
+    padding-bottom: 45px;
 }
 
 #local a:hover {
-    color: var(--amarelo); 
+    color: #090000; 
 }
  /* fim-Lygio */
 
