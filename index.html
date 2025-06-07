@@ -159,26 +159,33 @@
     <!--Oseias-->
     <section id="display">
 
-
-        <div class="corpo">
-
+        <div class="meuCorpo">
             <div class="conteiner">
 
                 <div class="carroselImg">
-                    <img src="./assets/carrossel/img-pousada/fachada.jpg" alt="Fachada">
-                    <img src="./assets/carrossel/img-pousada/quarto.jpg" alt="Quarto">
-                    <img src="./assets/carrossel/img-pousada/comida.jpg" alt="Café da manhã">
-                    <img src="./assets/carrossel/img-pousada/piscina.jpg" alt="Piscina">
+                    <img src="./assets/carrossel/img-pousada/fachada.jpg" class="slide ativo" alt="Fachada">
+                    <img src="./assets/carrossel/img-pousada/quarto.jpg" class="slide" alt="Quarto">
+                    <img src="./assets/carrossel/img-pousada/comida.jpg" class="slide" alt="Café da manhã">
+                    <img src="./assets/carrossel/img-pousada/piscina.jpg" class="slide" alt="Piscina">
                 </div>
+                
+                <button class="NavB ante">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
 
-            </div>
-            <button id="btn-ante">‹</button>
-            <button id="btn-prox">›</button>
-            <div class="pontosNav">
-                <span class="ponto"></span>
+                <button class="NavB prox">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+
+                <div class="pontosNav">
+                    <span class="ponto ativo" data-index="0"></span>
+                    <span class="ponto" data-index="1"></span>
+                    <span class="ponto" data-index="2"></span> 
+                    <span class="ponto" data-index="3"></span>
+                </div>
+            
             </div>
         </div>
-
 
     </section>
 

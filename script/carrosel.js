@@ -1,70 +1,31 @@
-const btnprox = document.getElementById('btn-prox');
-const btnante = document.getElementById('btn-ante');
-const slider = document.querySelector('.carroselImg');
-const conteiner = document.querySelector('.conteiner');
-
-const carroselWidth = parseInt(window.getComputedStyle(conteiner).width);
-const carroselImgWidth = parseInt(window.getComputedStyle(slider).width);
-
+const slides = document.querySelectorAll('.slide');
+const pontos = document.querySelectorAll('.ponto');
+const btnAnt = document.querySelector('.ante');
+const btnProx = document.querySelector('.prox');
 let slideAtual = 0;
 
-const slideProps = {
-  width: carroselWidth,
-  scroll: 0,
-};
-
-function setPontoA() {
-  const pontos = document.querySelectorAll('.ponto');
-  pontos.forEach((ponto) => ponto.classList.remove('atual'));
-  if (pontos[slideAtual]) {
-    pontos[slideAtual].classList.add('atual');
-  }
+function mostrarSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('ativo', i === index);
+        pontos[i].classList.toggle('ativo', i === index);
+    });
+    slideAtual = index;
 }
 
-function controlSlide({ target: { id } }) {
-  const totalSlides = slider.children.length;
+btnAnt.addEventListener('click', () => {
+    const index = (slideAtual - 1 + slides.length) % slides.length;
+    mostrarSlide(index);
+});
 
-  switch (id) {
-    case 'btn-prox': {
-      slideAtual = (slideAtual + 1) % totalSlides;
-      setPontoA();
-      if (slideProps.scroll + slideProps.width < carroselImgWidth) {
-        slideProps.scroll += slideProps.width;
-      } else {
-        slideProps.scroll = 0;
-      }
-      conteiner.scrollLeft = slideProps.scroll;
-      break;
-    }
-    case 'btn-ante': {
-      slideAtual = (slideAtual - 1 + totalSlides) % totalSlides;
-      setPontoA();
-      if (slideProps.scroll - slideProps.width >= 0) {
-        slideProps.scroll -= slideProps.width;
-      } else {
-        slideProps.scroll = carroselImgWidth - slideProps.width;
-      }
-      conteiner.scrollLeft = slideProps.scroll;
-      break;
-    }
-    default:
-      break;
-  }
-}
+btnProx.addEventListener('click', () => {
+    const index = (slideAtual + 1) % slides.length;
+    mostrarSlide(index);
+});
 
-btnprox.addEventListener('click', controlSlide);
-btnante.addEventListener('click', controlSlide);
+pontos.forEach( ponto => {
+    ponto.addEventListener('click', () => {
+        const index = parseInt(ponto.getAttribute('data-index'));
+        mostrarSlide(index);
+    });
+})
 
-window.onload = () => {
-  const pontosNav = document.querySelector('.pontosNav');
-  const pontoModelo = document.querySelector('.ponto');
-
-  if (pontosNav && pontoModelo) {
-    const lengthcontent = slider.children.length;
-    for (let index = 1; index < lengthcontent; index++) {
-      const novoPonto = pontoModelo.cloneNode(); 
-      pontosNav.appendChild(novoPonto); 
-    }
-  }
-  setPontoA();
-};
