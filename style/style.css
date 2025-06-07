@@ -360,100 +360,117 @@ body {
 
 /*Oséias --- Inicio*/
 
+
 #display {
-    margin: 0;
-    padding: 0;
-    background-color: #343233;
-    box-sizing: border-box;
-}
-
-.corpo {
-    align-items: center;
+    display: flex;
     justify-content: center;
-    display: flex;
+    align-items: center;
     height: 100vh;
-    position: relative;
+
 }
 
-.conteiner{
-    overflow-x: hidden;
-    overflow: hidden;
-    width: 900px;
-    border-radius: 15px;
-    scroll-behavior: smooth;
-}
-
-.carroselImg {
+.meuCorpo {
+    width: 75%;
+    height: 75%;
     display: flex;
-    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--amarelo);
+    border-radius: 30px 5px 30px 5px;
 }
 
-.carroselImg img{
-    width: 900px;
-    height: 350px;
+.conteiner {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
     border-radius: 15px;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-    display: block;
 }
 
-.carroselImg img:hover {
-    transform: 0.5s ease-in-out;
-    transform: scale(1.2);
+.carroselImg img {
+    border-radius: 15px;
 }
 
-
-
-#display button {
-    font-size: 100px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    color: white;
-    top: 50%;  
+.carroselImg{
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-
-#btn-ante{
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     left: 0;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    margin-left: 200px ;
+    top: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 0.5s ease;
+    object-fit: cover;
+    z-index: 0;
 }
 
-#btn-prox{
-    right: 0;
-    position: absolute;
-    transform: translate(50%, -50%);
-    margin-right: 200px;
-}
 
-#display button:hover {
-    color: var(--amarelo);
-    transition: 0.3s ease-in-out;       
-}
-
-.pontosNav{
-    position: absolute; 
-    bottom: 200px;
-    left: 50%;
-    transform: translateX(-50%); 
-    display: flex; 
-    gap: 10px;
+.slide.ativo{
+    opacity: 1;
     z-index: 1;
 }
 
-
-.ponto {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
+.NavB {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    padding: 10px 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
     border-radius: 50%;
-    background-color: white;
+    transition: color 0.3s ease-in, border 0.3s ease, background-color 0.3s ease;
+    z-index: 2;
 }
 
-.ponto.atual {
+.NavB.ante {
+    left: 0;
+}
+
+.NavB.prox {
+    right: 0;
+}
+
+.NavB:hover {
+    color: var(--marrom);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pontosNav {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.ponto {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.ponto.ativo {
     background-color: var(--marrom);
+    transform: scale(1.3);
+    box-shadow: 0 0 5px var(--marrom);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ponto:hover {
+    transform: scale(1.2);
 }
 
 /*Oséias --- FIM*/
