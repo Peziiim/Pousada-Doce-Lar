@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     cursor: default;
+    
  }
 
  html {
@@ -25,7 +26,7 @@ button, a{
  }
 
  @font-face {
-    font-family: serp;
+    font-family: handsome;
     src: url(../assets/fonts/serp/serp-and-molot.ttf);
  }
 
@@ -512,10 +513,13 @@ body {
 
 
 /* Lygio */
-#features {
-    background-color: #343233;
-    color: #ffedd8;
-}
+
+#particles-jsl {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+  }
 
 #imagemP {
     text-align: center;
@@ -529,6 +533,8 @@ body {
     width: 75vw;
     height: 550px;
     object-fit: cover;
+    position: relative;
+    z-index: 2;
 }
 
 #sobre {
@@ -540,7 +546,7 @@ body {
 #container {
     display: flex;
     justify-content: space-evenly;
-    color: #ffedd8;
+    color: var(--marrom);
     margin-right: 24px;
     
 }
@@ -564,13 +570,37 @@ body {
     font-size: 32px;
 }
 
+#comod li {
+    display: flex;
+    gap: 8px;
+}
 /* Lygio localização */
 
 #local {
-    color: #ffedd8;
-    background-color: #343233;
-    
+    font-family: charis;
+    color: #f8bf58;
 }
+
+#local {
+    position: relative;
+    overflow: hidden; 
+}
+
+#particles-jslocal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+    pointer-events: none; 
+}
+
+#local > *:not(#particles-jslocal) {
+    position: relative;
+    z-index: 2; 
+}
+
 
 #at{
     display: flex;
@@ -580,7 +610,7 @@ body {
 }
 
 #at img{
-    margin-top: 45px;
+    margin-top: 42px;
     margin-left: 35px;
 }
 
@@ -611,11 +641,11 @@ body {
 }
 
 #local a{
-    color: #ffedd8;
+    font-family: fineday;
+    color:  #f8bf58;
     margin-left: 75px;
-    align-items: flex-end;
     justify-content: center;
-    
+    padding-bottom: 45px;
 }
 
 #local a:hover {
