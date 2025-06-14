@@ -4,10 +4,14 @@ const btnAnt = document.querySelector('.ante');
 const btnProx = document.querySelector('.prox');
 const infos = document.querySelectorAll('.info');
 let slideAtual = 0;
+let slideProx = slideAtual + 1;
+let slideAnterior = slideAtual - 1;
 
 function mostrarSlide(index) {
     slides.forEach((slide, i) => {
         slide.classList.toggle('ativo', i === index);
+        slide.classList.toggle('proximo', i === (index + 1) % slides.length);
+        slide.classList.toggle('anterior', i === (index - 1 + slides.length) % slides.length);
         pontos[i].classList.toggle('ativo', i === index);
         infos[i].classList.toggle('ativo', i === index);
     });
