@@ -8,7 +8,6 @@
     align-items: center;
     justify-content: center;
     background-color: var(--bege);
-    display: flex;
     height: 100vh;
 }
 
@@ -16,7 +15,6 @@
     background-color: white;
     padding: 50px 100px;  
     width: 1200px;
-    height: 550px;
     border-radius: 30px;
     box-shadow: 0px 0px 3px rgba(0,0,0,0.15);
     margin-top: -440px;
@@ -83,7 +81,6 @@
     align-items: center;
     justify-content: end;
     color: var(--cinza);
-
 }
 
 #about-us-section .right-text-container p {
@@ -162,6 +159,8 @@
     align-items: center;
     padding-block: 4rem; 
     background-color: var(--bege);
+    margin-top: -280px;
+    padding-bottom: 150px;
 }
 
 #cards-section h1 {
@@ -172,7 +171,7 @@
 }
 
 #cards-section .cards {
-    margin-top: 3rem;
+    margin-top: 3rem; 
     display: flex;
     justify-content: center;
 }
@@ -182,7 +181,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 415px;
+    width: 400px;
     height: 675px;
     background: linear-gradient(180deg,rgba(255, 232, 189, 1) 0%, rgba(255, 223, 172, 1) 100%);
     color: black;
@@ -196,6 +195,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#cards-section .icons-container {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+#cards-section .icons-container p{
+    font-family: archivo;
+    font-weight: 500;
+}
+
+#cards-section .icons-container div{
+    display: flex;
+    align-items: center;
+}
+
+#cards-section .icons-container .wifi img{
+    margin-right: 5px;
 }
 
 #cards-section .img-container img {
