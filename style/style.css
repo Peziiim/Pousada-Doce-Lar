@@ -423,7 +423,8 @@ body {
 
 .slide.ativo{
     opacity: 1;
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.4s ease-in-out;
     z-index: 2;
 }
 
