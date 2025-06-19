@@ -154,15 +154,28 @@
   from {
     height: 50px;
     width: 50px;
-    opacity: 0.2;
+    font-size: 0px;
   }
 
   to {
     height: auto;
     width: auto;
     padding: 20px;
-    margin: 100px 8vw 0 0;
+    margin: 100px 3vw 0 0;
+    font-size: 18px;
+  }
+}
+
+@keyframes growContent {
+  from {
+    font-size: 0;
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  to {
+    font-size: 18px;
     opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -183,11 +196,14 @@
 }
 
 .resize {
-  animation: resizeWe 2s forwards;
+  animation: resizeWe 1s forwards;
 }
 
+#We-main.grow-content > * {
+  animation: growContent 1.5s forwards;
+}
 .unsize {
-    animation: unsize 2s forwards;
+    animation: unsize 1.5s forwards;
 }
 
 .shake {
@@ -195,15 +211,15 @@
 }
 
 .rotate {
-  animation: rotate 2s infinite;
+  animation: rotate 1s infinite;
 }
 
 .appear{
-   animation: appear 2s 1;
+   animation: appear 1s 1;
 }
 
 .remove {
-   animation: remove 2s 1;
+   animation: remove 1s 1;
 }
 
     

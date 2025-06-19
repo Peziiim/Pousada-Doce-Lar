@@ -18,6 +18,7 @@ const QaForm = document.getElementById("QA-form")
  const weMain = document.getElementById("We-main")
  const weImg = document.getElementById("We-figure")
  const weContainer = document.getElementById("We-container")
+const showWe = document.getElementById("showWe")
 //WE
 
 let respostas = [
@@ -146,7 +147,6 @@ function showInfo(json){
             day = "Sabado"
             break
     }
-    json.weather = "Rain"
 
     if(json.weather === "Clear"){figure = `<img id="We-figure" src="./assets/images/sol.png" alt="Sol">`} else 
 
@@ -157,20 +157,21 @@ function showInfo(json){
         figure =  `<img id="We-figure" src="./assets/images/nublado.png" alt="nublado">`
     }
 
-    console.log(json.descricao)
     
     weMain.innerHTML = `<p id="We-desc">${json.descricao}</p>
                             ${figure}
                         <p id="We-temp">${json.temp}°C</p>
                         <p id="day"> ${day}</p>`  
 
+    
                         weIcon.style.display = "none"
                         weContainer.classList.add("resize")
                         weContainer.classList.remove("unsize")
-                        setTimeout(() => {
-                            weMain.style.display = "block"
+                        weMain.style.display = "block"
+                        weMain.classList.add("grow-content");
+                       
                             
-                        }, 700)                 
+                                 
 }
 
 async function weIconClick(){
@@ -195,10 +196,10 @@ async function weIconClick(){
 
 
 weMain.addEventListener("click", () => {
-    console.log("oi")
     weMain.style.display = "none"
     weContainer.classList.add("unsize")
     weContainer.classList.remove("resize")
+    weMain.classList.remove("grow-content")
     weIcon.style.display = "flex"              
 })
 

@@ -850,6 +850,11 @@ body {
 
 #We-icon {
   cursor: pointer;
+
+}
+
+#WeIcon {
+  width: 100px;
 }
 
 #We-main {
