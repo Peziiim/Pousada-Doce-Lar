@@ -158,9 +158,9 @@ function showInfo(json){
     }
 
     
-    weMain.innerHTML = `<p id="We-desc">${json.descricao}</p>
+    weMain.innerHTML = `<p id="We-desc">Camanducaia<br><strong>${json.descricao}</strong></p>
                             ${figure}
-                        <p id="We-temp">${json.temp}°C</p>
+                        <p id="We-temp"><strong>${json.temp}°C</strong></p>
                         <p id="day"> ${day}</p>`  
 
     
