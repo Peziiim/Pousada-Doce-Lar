@@ -855,6 +855,7 @@ body {
 
 #WeIcon {
   width: 100px;
+  cursor: pointer;
 }
 
 #We-main {
@@ -871,7 +872,6 @@ body {
 #We-desc, #We-temp {
     font-family: archivo;
     font-size: 18px;
-    font-weight: 900;
     color: black;
 }
 
