@@ -147,7 +147,7 @@ function showInfo(json){
             break
     }
     json.weather = "Rain"
-    
+
     if(json.weather === "Clear"){figure = `<img id="We-figure" src="./assets/images/sol.png" alt="Sol">`} else 
 
     if(json.weather === "Rain"){figure = `<img id="We-figure" src="./assets/images/chuva.png" alt="chuva">`} else 
@@ -166,6 +166,7 @@ function showInfo(json){
 
                         weIcon.style.display = "none"
                         weContainer.classList.add("resize")
+                        weContainer.classList.remove("unsize")
                         setTimeout(() => {
                             weMain.style.display = "block"
                             
@@ -197,6 +198,7 @@ weMain.addEventListener("click", () => {
     console.log("oi")
     weMain.style.display = "none"
     weContainer.classList.add("unsize")
+    weContainer.classList.remove("resize")
     weIcon.style.display = "flex"              
 })
 
