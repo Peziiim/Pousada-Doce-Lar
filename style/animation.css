@@ -136,6 +136,64 @@
     }
   }
 
+@keyframes shake {
+  0% {
+    transform: translateX(5px);
+  }
+
+  50% {
+    transform: translate(-10px);
+  }
+
+  100% {
+    transform: translate(5px);
+  }
+}
+
+@keyframes resizeWe {
+  from {
+    height: 50px;
+    width: 50px;
+    opacity: 0.2;
+  }
+
+  to {
+    height: auto;
+    width: auto;
+    padding: 20px;
+    margin: 100px 8vw 0 0;
+    opacity: 1;
+  }
+}
+
+@keyframes unsize {
+  from {
+    height: auto;
+    width: auto;
+    padding: 20px;
+    margin: 100px 8vw 0 0;
+    opacity: 0.2;
+  }
+
+  to {
+     height: 50px;
+     width: 50px;
+     opacity: 1;
+  }
+}
+
+.resize {
+  animation: resizeWe 2s forwards;
+}
+
+.unsize {
+    animation: unsize 2s forwards;
+}
+
+.shake {
+  animation: shake .2s infinite;
+}
+
 .rotate {
   animation: rotate 2s infinite;
 }
@@ -147,3 +205,5 @@
 .remove {
    animation: remove 2s 1;
 }
+
+    
