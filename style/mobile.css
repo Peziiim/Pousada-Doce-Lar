@@ -306,6 +306,10 @@
         max-width: 100vw;
         max-height: 210px;
     }  
+
+    .slide.ativo{
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    }
     .conteinerCarrosel {
         min-height: 210px;
         height: auto;
