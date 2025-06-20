@@ -6,11 +6,10 @@
     font-family: poetsen-one-regular;
     background: url('https://apod.nasa.gov/apod/image/2405/M104HST.jpg') no-repeat center center/cover;
     position: relative;
-    overflow: hidden;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100vh;
+    height: auto;
   }
 
   #particles-js {
@@ -22,7 +21,7 @@
 
   .centercontact {
     width: 90vw;
-    height: 90vh;
+    height: auto;
     background: #FFF6E7;
     background: linear-gradient(130deg,rgba(255, 246, 231, 1) 100%, rgba(255, 255, 255, 1) 1%);
     border-radius: 20px; 
@@ -33,12 +32,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .leftcontact{
     width: 40vw;
-    height: 80vh;
-    padding: 2.5vw;
+    height: auto;
+    padding: 2vw;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -47,28 +47,30 @@
 
   .rightcontact{
     width: 40vw;
-    height: 80vh;
-    padding: 2.5vw;
+    height: auto;
+    padding: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   #colagem{
-    width: auto;
-    height: 100%;
+    width: 40vw;
+    height: auto;
+    object-fit: contain;
+    display: block;
     z-index: 2;
   }
   
   .centercontact h1 {
-    font-size: 4vw;
+    font-size: clamp(20px, 4vw, 40px);
     margin: 0;
     color: #f8bf58;
     padding: 0;
   }
 
   .centercontact h2 { 
-    font-size: 2.2vw;
+    font-size: clamp(16px, 2.5vw, 32px);
     margin: 0px;
     color: #612f00;
     padding: 0;
@@ -93,8 +95,8 @@
     padding: 15px 25px;
     background-color:#ffebc7;
     border-radius: 8px;
-    font-size: 1.2vw;
-    font-weight: 600;
+    font-size: clamp(10px, 2vw, 25px);
+    font-weight: 350;
     font-style:normal;
     cursor: pointer;
     border: none;
