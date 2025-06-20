@@ -77,7 +77,7 @@
 
 .pop-show {
   display: flex;
-   animation: pop-show 2.5s;
+   animation: pop-show 2s;
    z-index: 2;
 }
 
@@ -94,3 +94,132 @@
   
   }
 
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0);
+      opacity: 1;
+    }
+
+    to {
+       transform: rotate(360deg);
+       opacity: 0;
+    }
+  }
+
+
+  @keyframes appear {
+    0% {
+      transform: scale(0) translateY(250px) translateX(150px);
+      opacity: 0;
+    }
+
+    75% {
+      transform: scale(1.05);
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  } 
+
+   @keyframes remove {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    100% {
+      transform: scale(0) translateY(250px) translateX(250px);
+      opacity: 0;
+    }
+  }
+
+@keyframes shake {
+  0% {
+    transform: translateX(5px);
+  }
+
+  50% {
+    transform: translate(-10px);
+  }
+
+  100% {
+    transform: translate(5px);
+  }
+}
+
+@keyframes resizeWe {
+  from {
+    height: 50px;
+    width: 50px;
+    font-size: 0px;
+  }
+
+  to {
+    height: auto;
+    width: auto;
+    padding: 20px;
+    margin: 110px 3vw 0 0;
+    font-size: 18px;
+  }
+}
+
+@keyframes growContent {
+  from {
+    font-size: 0;
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  to {
+    font-size: 18px;
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes unsize {
+  from {
+    height: auto;
+    width: auto;
+    padding: 20px;
+    margin: 100px 8vw 0 0;
+    opacity: 0.2;
+  }
+
+  to {
+     height: 50px;
+     width: 50px;
+     opacity: 1;
+  }
+}
+
+.resize {
+  animation: resizeWe 1s forwards;
+}
+
+#We-main.grow-content > * {
+  animation: growContent 1.5s forwards;
+}
+.unsize {
+    animation: unsize 1.5s forwards;
+}
+
+.shake {
+  animation: shake .2s infinite;
+}
+
+.rotate {
+  animation: rotate 1s infinite;
+}
+
+.appear{
+   animation: appear 1s 1;
+}
+
+.remove {
+   animation: remove 1s 1;
+}
+
+    

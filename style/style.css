@@ -103,10 +103,12 @@ body {
 }
 
 .right {
-    width: 20%;
+    width: auto;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: start;
+    margin-right: 5vw;
+    gap: 30px;
 }
 
 .li-header {
@@ -679,4 +681,203 @@ body {
 }
  /* fim-Lygio */
 
+ /* QA -inicio */
 
+.QA-container {
+    position: fixed;
+     right: 3vw;
+     bottom: 8vh;
+     z-index: 3;
+}
+
+.QA-block {
+    height: auto;
+    max-width: 25vw;
+    min-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8bf58;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+.QA-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: archivo;
+    border-bottom: inset;
+    border-color: #ffffff;
+    font-weight: 900;
+    padding-bottom: 7px;
+    margin-bottom: 20px;
+    gap: 10px;
+    min-width: 90%;
+}
+
+
+#return {
+    cursor: pointer;
+    color: #ffffff;;
+}
+
+.QA-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 25vh;
+    height: auto;
+    gap: 5px;
+}
+
+.QA-button, .QA-button a, .QA-buttonO, .QA-buttonO a {
+    width: 85%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    font-weight: 900;
+    border: 0;
+    padding: 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+.QA-button:hover, .QA-buttonO:hover{
+    background-color: rgb(218, 217, 217);
+} 
+
+.QA-main {
+    background-color: #f8bf58;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+.QA-main p {
+   position: relative;
+   top: 15px;
+   font-size: 24px;
+   font-weight: 700;
+  cursor: pointer;
+}
+
+.QA-text {
+    height: auto;
+    display: none;
+    max-width: 100%;
+    background-color: #ffffff;
+    padding: 10px 35px 10px 35px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#QA-content {
+    font-size: 18px;
+    font-family: archivo;
+    color: black;
+    font-weight: 600;
+}
+
+#QA-form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    display: none;
+}
+
+#QA-form h1 {
+    font-family: archivo;
+    font-weight: 700;
+    font-size: 25px; 
+    margin-bottom: 20px;
+}
+
+#QA-form .QA-input {
+   width: 100%;
+   height: 15px;
+   border-radius: 10px;
+   padding: 10px;
+   border: 2px solid grey;
+}
+
+#submit {
+    width: 60%;
+    border-radius: 10px;
+    height: 35px;
+    color: white;
+    background-color: #c85e0e;
+    font-weight: 900;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#message {
+    min-height: 60px;
+    height: auto;
+    resize: none;
+    word-wrap: break-word;
+}
+  /* QA -fim */
+
+    /* Temp - inicio */
+
+#We-container {
+    background-color: #f8bf58;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    z-index: 5;
+}
+
+#We-icon {
+  cursor: pointer;
+
+}
+
+#WeIcon {
+  width: 100px;
+  cursor: pointer;
+}
+
+#We-main {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    gap: 40px;
+}
+
+#We-desc, #We-temp {
+    font-family: archivo;
+    font-size: 18px;
+    color: black;
+}
+
+#We-main img {
+    width: 5vw;
+    cursor: pointer;
+}
+
+     /* Temp - fim */
