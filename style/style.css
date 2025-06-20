@@ -145,6 +145,7 @@ body {
     cursor: pointer;
 }
 
+
 .left-block {
     background-color: #ffe8c0;
     width: 50vw;
@@ -183,19 +184,19 @@ body {
 
 #header-map {
     width: 30vw;
-    height: 30vw;
+    height: 30vh;
     border-radius: 5px;
     position: relative;
-    right: 10%;
-    top: 2%;
+    right: 5%;
+    bottom: 4%;
 }
 
 
 #ponteiro {
     width: 30px;
-    position: absolute;
-    bottom: 38.5vh;
-    right: 40.7vw;
+    position: relative;
+    top: 35%;
+    left: 27%;
     cursor: pointer;
     z-index: 1;
 }
@@ -354,7 +355,9 @@ body {
     color: white;
 }
 
-
+#localizacaotit {
+    font-size: 58px;
+}
 /* --------- */
 #rate {
     display: flex;
