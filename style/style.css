@@ -68,6 +68,10 @@ body {
 
 .container-header {
     height: 92vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .nav-bar{
@@ -86,20 +90,25 @@ body {
     list-style-type: none;
     background-color: transparent;
     width: 100%;
+    cursor: pointer;
 }
 
 .itens-nav h3 {
     font-size: 2rem;
     color: black;
     opacity: 1;
+    cursor: pointer;
 }
 
+.itens-nav h4 {
+    cursor: pointer;
+}
 .left {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 60px;
-    width: 40%;
+    width: 45%;
 }
 
 .right {
@@ -123,6 +132,7 @@ body {
     font-weight: 700;
     font-style: none;
     color: #000000;
+    cursor: pointer;
 }
 
 .right button {
@@ -132,13 +142,13 @@ body {
     font-size: 15px;
     font-weight: 700;
     padding: 10px 15px 10px 15px;
+    cursor: pointer;
 }
 
 .left-block {
     background-color: #ffe8c0;
     width: 50vw;
     height: 85vh;
-    float: right;
     display: flex;
     flex-direction: column;
     justify-content: center;
