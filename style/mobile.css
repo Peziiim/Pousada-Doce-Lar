@@ -8,7 +8,7 @@
     /*Eduardo --- Começo*/
 
   .container-header {
-    height: 75vh;
+    height: 74vh;
     overflow-x: hidden;
     scroll-behavior: none;
 }
@@ -16,6 +16,7 @@
 .header {
     overflow-x: hidden;
     scroll-behavior: none;
+    max-width: 75vh;
 }
 .nav-bar{
     display: flex;
@@ -95,11 +96,11 @@
     width: 40vw;
     height: 17vh;
     border-radius: 5px;
-    margin: 20px 0 5px 7vw;
+    margin: 20px 0 5px 9.4vw;
 }
 
 #header-map {
-    width: 40vw;
+    width: 45vw;
     height: 28vw;
     border-radius: 5px;
     right: 2%;
