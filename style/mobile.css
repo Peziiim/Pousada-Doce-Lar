@@ -71,7 +71,6 @@
     justify-content: center;
     align-items: center;
     border-radius: 0 0 0 20px;
-     overflow-x: hidden;
 }
 
 .rigth-block  {
@@ -100,21 +99,20 @@
 }
 
 #header-map {
-    width: 48vw;
+    width: 40vw;
     height: 28vw;
     border-radius: 5px;
-    position: relative;
-    right: 11%;
-    top: 2%;
+    right: 2%;
 }
 
+#localizacaotit {
+    font-size: 48px;
+}
 
 #ponteiro {
     width: 20px;
-    position: absolute;
-    bottom: 46.5vh;
-    right: 28.7vw;
     cursor: pointer;
+    top: 45%;
     z-index: 1;
 }
 
