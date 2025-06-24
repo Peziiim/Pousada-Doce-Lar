@@ -125,25 +125,25 @@ function showInfo(json){
     let day
 
     switch(date){
-        case 1:
+        case 0:
             day = "Domingo"
             break
-        case 2:
+        case 1:
             day = "Segunda-feira"
             break
-        case 3:
+        case 2:
             day = "Terça-feira"
             break
-        case 4:
+        case 3:
             day = "Quarta-feira"
             break
-        case 5:
+        case 4:
             day = "Quinta-feira"
             break
-        case 6:
+        case 5:
             day = "Sexta-feira"
             break
-        case 7:
+        case 6:
             day = "Sabado"
             break
     }
@@ -157,7 +157,7 @@ function showInfo(json){
         figure =  `<img id="We-figure" src="./assets/images/nublado.png" alt="nublado">`
     }
 
-    
+
     weMain.innerHTML = `<p id="We-desc">Camanducaia<br><strong>${json.descricao}</strong></p>
                             ${figure}
                         <p id="We-temp"><strong>${json.temp}°C</strong></p>
@@ -214,3 +214,13 @@ x.addEventListener("click", () => {
 } )
 
 
+let outerVar = 100;
+{
+  let innerVar1 = 200;
+  let innerVar2 = 300;
+  innerVar1 = innerVar1 + innerVar2;
+  outerVar = innerVar1 + outerVar;
+  console.log("innerVar1: " + innerVar1);
+  console.log("innerVar2: " + innerVar2);
+}
+console.log("outerVar: " + outerVar);
